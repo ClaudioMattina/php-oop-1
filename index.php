@@ -12,17 +12,19 @@
             $this -> year = $_year;
         }
 
-        /* public function get_year(){
+        public function get_year(){
             return $this -> year;
             if($this->year ==!is_numeric($this->year)){
                 echo "valore non valido";
             };
-        } */
+        }
 
         
     }
 
     $primoFilm = new Movie('Pulp Fiction', 'Tarantino', 1998);
+    $secondoFilm = new Movie('la Sirenetta', 'Caio', 2018);
+    $terzoFilm = new Movie('Lilo e Stitch', 'Tizio', 2020);
 ?>
 
 <!DOCTYPE html>
@@ -34,12 +36,24 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <h1>Titolo film: {{}}</h1> -->
 
     <div>
         <?php 
-            var_dump($primoFilm);
+            var_dump($primoFilm); 
         ?>
     </div>
+    <div>
+        <?php 
+            var_dump($secondoFilm); 
+        ?>
+    </div>
+    <div>
+        <?php 
+            var_dump($terzoFilm); 
+        ?>
+    </div>
+
+    
+            
 </body>
 </html>
